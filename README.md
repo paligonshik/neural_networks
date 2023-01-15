@@ -25,4 +25,62 @@ This course provides a broad introduction to neural networks and deep learning. 
 ## Usage
 1. Clone the repository
 
-```git clone https://github.com/yourusername/your-paligonshik.git```
+```
+git clone https://github.com/paligonshik/neural_networks.git
+```
+2. Install the required packages
+
+``` 
+pip install -r requirements.txt
+```
+3. Jupyter Notebook
+```
+jupyter notebook
+```
+
+# [Logistic Regression with a Neural Network mindset](https://github.com/paligonshik/neural_networks/tree/main/Logistic%20Regression%20with%20a%20Neural%20Network%20)
+In this repo,
+
+I built the general architecture of a learning algorithm, including:
+Initializing my parameters
+Calculating the cost function and its gradient
+Using an optimization algorithm (gradient descent)
+I gathered all three functions above into a main model function, in the right order. Here are couple of functions that I implemented
+
+### Logistic Cost Function
+$$J(\theta) = -\frac{1}{m}\sum_{i=1}^{m}[y^{(i)}\log(h_\theta(x^{(i)})) + (1-y^{(i)})\log(1-h_\theta(x^{(i)}))]$$
+Where:
+- `m` is the number of training examples
+- `y` is the true label of the training example
+- `x` is the input feature of the training example
+- `h(x)` is the predicted label (hypothesis) of the input feature x
+- `J(θ)` is the cost function
+- `θ` is the weight parameter
+
+### The sigmoid function is defined as:
+
+$$ \sigma(z) = \frac{1}{1 + e^{-z}} $$
+
+Where `z` is the input to the function.
+
+
+
+
+The Backpropagation using Gradient Descent algorithm is defined as:
+
+1. Initialize the weights with random values.
+2. Feed forward the inputs through the network and calculate the output.
+3. Calculate the error.
+4. Propagate the error back through the network using the chain rule of calculus.
+5. Calculate the gradient of the cost function with respect to the weights 
+   $$ \frac{\partial E}{\partial w_{i,j}} $$
+6. Update the weights with the following equation:
+   $$ w_{i,j} = w_{i,j} - \alpha \frac{\partial E}{\partial w_{i,j}} $$
+7. Repeat steps 2-6 for a fixed number of iterations or until the error reaches a certain threshold.
+
+Where:
+- `w_{i,j}` is the weight of the connection between unit i and unit j
+- `E` is the error function
+- `alpha` is the learning rate
+
+![Image alt text][Images/Img1.png]
