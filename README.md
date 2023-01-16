@@ -1,3 +1,6 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+
 # Introduction to Neural Networks
 
 This repository contains Jupyter notebooks for the assignments and projects completed as part of the course "Introduction to Neural Networks" within the [Andrew NG deep learning specialization](https://www.coursera.org/learn/neural-networks-deep-learning/) on [Coursera](https://www.coursera.org/]).
